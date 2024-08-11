@@ -22,4 +22,7 @@ router.get("/tienda", (req, res) =>
 //Ruta Pagina de Login
 router.get("/login", (req, res) => res.render("login", { title: "Login" }));
 
+//Ruta Pagina de detalles
+router.get('/detalles',(req,res)=>res.render('detalles',{title:'Detalles del Producto'}))
+
 export default router;

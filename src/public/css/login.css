@@ -1,0 +1,86 @@
+/* GLOBALES */
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #decccc;
+  --secundario: #ef233c;
+  --celeste: #1098f7;
+  --grisclaro: #0f4e8d;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*aplicara para los todos los tamaños * */
+  scroll-snap-type: y mandatory; /*para hacer scroll*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* 1rem = 10px*/
+  font-family: "Krub", sans-serif;
+  background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco))
+    100%; /* para hacer DEGRAGADO */
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  line-height: 50px;
+  background-color: var(--celeste);
+  width: min(80rem, 50%);
+  margin: 0 auto; /*se usa cuando es formulario y no tiene display flex*/
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.boton {
+  background-color: var(--principal); /*fondo*/
+  color: var(--blanco); /*color del texto*/
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 1.5rem; /*tamaño del texto*/
+  text-decoration: none; /*elimina el subrayado*/
+  text-transform: uppercase; /*cambia a letra mayuscula*/
+  font-weight: bold; /*mas negrito el texto*/
+  border-radius: 1rem; /*border redondeado*/
+  width: 90%; /*ancho del boton*/
+  text-align: center;
+  border: none;
+}
+
+.form-control {
+  width: auto;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--blanco);
+  margin-top: 1rem;
+}
+img {
+  width: 500px;
+  border-radius: 1rem;
+}
+
+.card1 {
+  align-content: center;
+}
+.card2 {
+  align-content: center;
+}
+.card3 {
+  align-content: center;
+}
+.card4 {
+  align-content: center;
+}
+@media (min-width: 768px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="pagina de contacto">
     <meta name="keywords" content="Ferretería, Ecommerce, productos ferreteros, Herramientas, Construcción">
-    <meta name="author" content="#">
-    <%- include('partials/head') %>
-</head>
-<body>
-    <header>
-        <%- include('partials/header') %>
-        <%- include('partials/navigation') %>
-    </header>
-    <main>
-        <!-- Contenido del sitio -->
+    <link rel="stylesheet" href="css/contacto.css">
 
-    </main>
-<%- include('partials/footer') %>
+
+    <title>
+        <%= title%>
+    </title>
+</head>
+
+
+<body>
+    <%- include('partials/navigation') %>
+
+        <section>
+
+            <form class="formulario">-
+                <!-- para dar border al formulario -->
+                <fieldset>
+
+                    <legend>Comunicate con Nosotros</legend>
+                    <div>
+                        <ul>
+                            <a>Horario de Atención</a>
+                            <label>Lun-Vie 08:00 AM - 18:00 PM </label>
+                            <h4>Teléfonos</h4>
+                            <label>987654321</label>
+                            <h4>Dirección</h4>
+                            <div class="ubicacion">
+                                <p> Lima</p>
+                            </div>
+                        </ul>
+
+                    </div>
+                    <legend>Escríbenos</legend>
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <input class="input-text" type="text" placeholder="Nombre y Apellidos">
+                        </div>
+                        <div class="campo">
+                            <input class="input-text" type="number" placeholder="Teléfono">
+                        </div>
+                        <div class="campo">
+                            <input class="input-text" type="email" placeholder="Correo">
+                        </div>
+                        <div class="campo">
+                            <textarea class="input-text"
+                                placeholder="Escríbenos para poder atenderlo mas pronto."></textarea>
+                        </div>
+                    </div>
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
 </body>
+
 </html>

@@ -16,51 +16,55 @@
 
 
 <body>
-    <%- include('partials/navigation') %>
+    <header>
+        <%- include('partials/header') %>
+            <%- include('partials/navigation') %>
+    </header>
 
-        <section>
 
-            <form class="formulario">-
-                <!-- para dar border al formulario -->
-                <fieldset>
+    <section>
 
-                    <legend>Comunicate con Nosotros</legend>
-                    <div>
-                        <ul>
-                            <a>Horario de Atención</a>
-                            <label>Lun-Vie 08:00 AM - 18:00 PM </label>
-                            <h4>Teléfonos</h4>
-                            <label>987654321</label>
-                            <h4>Dirección</h4>
-                            <div class="ubicacion">
-                                <p> Lima</p>
-                            </div>
-                        </ul>
+        <form class="formulario">-
+            <!-- para dar border al formulario -->
+            <fieldset>
 
+                <legend>Comunicate con Nosotros</legend>
+                <div>
+                    <ul>
+                        <a>Horario de Atención</a>
+                        <label>Lun-Vie 08:00 AM - 18:00 PM </label>
+                        <h4>Teléfonos</h4>
+                        <label>987654321</label>
+                        <h4>Dirección</h4>
+                        <div class="ubicacion">
+                            <p> Lima</p>
+                        </div>
+                    </ul>
+
+                </div>
+                <legend>Escríbenos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <input class="input-text" type="text" placeholder="Nombre y Apellidos">
                     </div>
-                    <legend>Escríbenos</legend>
-
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <input class="input-text" type="text" placeholder="Nombre y Apellidos">
-                        </div>
-                        <div class="campo">
-                            <input class="input-text" type="number" placeholder="Teléfono">
-                        </div>
-                        <div class="campo">
-                            <input class="input-text" type="email" placeholder="Correo">
-                        </div>
-                        <div class="campo">
-                            <textarea class="input-text"
-                                placeholder="Escríbenos para poder atenderlo mas pronto."></textarea>
-                        </div>
+                    <div class="campo">
+                        <input class="input-text" type="number" placeholder="Teléfono">
                     </div>
-                    <div class="alinear-derecha flex">
-                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    <div class="campo">
+                        <input class="input-text" type="email" placeholder="Correo">
                     </div>
-                </fieldset>
-            </form>
-        </section>
+                    <div class="campo">
+                        <textarea class="input-text"
+                            placeholder="Escríbenos para poder atenderlo mas pronto."></textarea>
+                    </div>
+                </div>
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
 </body>
 
 </html>

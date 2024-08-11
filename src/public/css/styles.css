@@ -1,0 +1,141 @@
+.titulos-h2{
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+.subtitulos {
+    font-size: 18px;
+    padding: 15px 0;
+    font-weight: 500;
+    text-align: center
+}
+.boton{
+    background-color: var(--principal);
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* SECCION CANALES DE VENTA */
+.canales-venta {
+    padding: 35px 15px;
+    background-color: #fff;
+}
+.tarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: row;
+}
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    background-color: #F9F9F9;
+    text-align: center;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow:  23px 23px 46px #eaeaea,
+             -23px -23px 46px #ffffff;
+}
+.tarjeta img{
+    max-width: 64px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.tarjeta h3{
+    margin-bottom: 15px;
+}
+.tarjeta a{
+    margin-bottom: 15px;
+}
+
+
+/* INICIO */
+.hero{
+    min-width: 100%;
+    min-height: 300px;
+}
+
+.about {
+    width: 100%s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 60px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.about .izq{
+    width: 40%;
+}
+.about .der{
+    width: 60%;
+}
+.izq img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.der {
+    padding: 0 50px;
+}
+.der h3 {
+    color: var(--principal);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.der h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4em;
+}
+.der p {
+    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+
+.marcas {
+    background-color: #F9F9F9;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+
+}
+
+.marca-logo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+.marca-logo img {
+    padding: 15px;
+    min-width: 210px;
+    height: auto;
+}
+

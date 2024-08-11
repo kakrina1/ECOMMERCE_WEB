@@ -5,7 +5,7 @@ const router = Router()
 router.get('/',(req,res)=> res.render('index',{title:'Ecommerce Ferreteria'}))
 
 //Ruta Pagina de Nosotros
-router.get('/nosotros',(req,res)=>res.render('about',{title:'Nosotros'}))
+router.get('/about',(req,res)=>res.render('about',{title:'Nosotros'}))
 
 //Ruta Pagina de Contacto
 router.get('/contacto',(req,res)=>res.render('contacto',{title:'Contacto'}))

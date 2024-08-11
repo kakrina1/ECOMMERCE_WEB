@@ -15,5 +15,4 @@ router.get('/tienda',(req,res)=>res.render('tienda',{title:'Productos Online'}))
 
 
 
-
 export default router

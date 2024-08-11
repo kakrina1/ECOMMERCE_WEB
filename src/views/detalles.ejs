@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Conozca más sobre nuestra ferretería, nuestros valores, misión y el equipo que hace todo posible.">
+    <meta name="keywords" content="Ferretería, Ecommerce, Sobre Nosotros, Herramientas, Construcción">
+    <meta name="author" content="#">
+    <%- include('partials/head') %>
+</head>
+<body>
+    <header>
+        <%- include('partials/header') %>
+        <%- include('partials/navigation') %>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="https://promart.vteximg.com.br/arquivos/ids/8062133-1000-1000/132421_14.jpg?v=638564124418830000" alt="Taladro y Atornillador">
+            </div>
+            <div class="product-details">
+                <h1>Taladro Per DCD716 + Atornillador DCF885</h1>
+                <p class="price">S/ 899.00</p>
+                <p class="description">
+                    Este potente combo de taladro y atornillador es la herramienta perfecta para profesionales y aficionados al bricolaje que buscan rendimiento y versatilidad en sus proyectos. Equipado con un taladro robusto y un atornillador de alto torque, este set está diseñado para afrontar tareas exigentes con facilidad. Viene con dos baterías de 2 Ah, lo que asegura una autonomía prolongada y la posibilidad de trabajar sin interrupciones. Además, incluye un cargador eficiente para mantener las baterías siempre listas para el próximo desafío.
+                </p>
+                <button class="buy-btn">Comprar ahora</button>
+            </div>
+        </div>
+
+        <section class="product-specs">
+            <h2>Especificaciones:</h2>
+            <ul>
+                <li>Voltaje: 20V</li>
+                <li>Velocidad sin carga: 0-1500 RPM</li>
+                <li>Capacidad de batería: 2 Ah</li>
+                <li>Peso: 1.2 kg</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <%- include('partials/footer') %>
+</body>
+</html>

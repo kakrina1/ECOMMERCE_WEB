@@ -13,8 +13,7 @@ router.get('/contacto',(req,res)=>res.render('contacto',{title:'Contacto'}))
 //Ruta Pagina de tienda
 router.get('/tienda',(req,res)=>res.render('tienda',{title:'Productos Online'}))
 
-//Ruta Pagina de detalles
-router.get('/detalles',(req,res)=>res.render('detalles',{title:'Detalles del Producto'}))
+
 
 
 export default router

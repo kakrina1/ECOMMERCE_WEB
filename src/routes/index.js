@@ -14,5 +14,4 @@ router.get('/contacto',(req,res)=>res.render('contacto',{title:'Contacto'}))
 router.get('/tienda',(req,res)=>res.render('tienda',{title:'Productos Online'}))
 
 
-
 export default router

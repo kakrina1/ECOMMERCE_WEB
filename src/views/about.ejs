@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros - Ferretería Online</title>
     <meta name="description" content="Conozca más sobre nuestra ferretería, nuestros valores, misión y el equipo que hace todo posible.">
     <meta name="keywords" content="Ferretería, Ecommerce, Sobre Nosotros, Herramientas, Construcción">
-    <meta name="author" content="Ferretería [Nombre de la Empresa]">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/main.css">
+    <meta name="author" content="#">
+    <%- include('partials/head') %>
 </head>
 <body>
-    <%- include('partials/navigation') %>
-
-    <div class="container">
-        <h1>Sobre Nosotros</h1>
-        <div class="content">
-            <h2>Nuestra Misión</h2>
-            <p>En <strong>[Nombre de la Empresa]</strong>, nuestra misión es ser la ferretería online de referencia, ofreciendo una amplia variedad de herramientas y materiales de construcción de alta calidad a precios competitivos, con un enfoque en la rapidez y la satisfacción del cliente.</p>
-
-            <h2>Nuestra Visión</h2>
-            <p>Aspiramos a transformar la manera en que las personas compran herramientas y materiales, combinando la conveniencia del ecommerce con un servicio al cliente excepcional, y expandiendo nuestro catálogo para cubrir todas las necesidades de nuestros clientes.</p>
-
-            <h2>Nuestros Valores</h2>
-            <p>Nos regimos por la integridad, la excelencia y la responsabilidad. Estos valores nos permiten construir relaciones duraderas con nuestros clientes y proveedores, garantizando siempre la mejor experiencia de compra.</p>
-
-            <h2>El Equipo</h2>
-            <p>Contamos con un equipo de expertos en herramientas y construcción, comprometidos con ofrecerte el mejor asesoramiento y servicio. Nuestro objetivo es ayudarte a encontrar la solución perfecta para tus proyectos.</p>
-
-            <a href="/productos" class="btn-primary">Ver Productos</a>
+    <header>
+        <%- include('partials/header') %>
+        <%- include('partials/navigation') %>
+    </header>
+    <main>
+        <!-- Contenido del sitio -->
+        <div class="container">
+            <h1>Sobre Nosotros</h1>
+            <div class="content">
+                <h2>Nuestra Misión</h2>
+                <p>En <strong>[Nombre de la Empresa]</strong>, nuestra misión es ser la ferretería online de referencia, ofreciendo una amplia variedad de herramientas y materiales de construcción de alta calidad a precios competitivos, con un enfoque en la rapidez y la satisfacción del cliente.</p>
+    
+                <h2>Nuestra Visión</h2>
+                <p>Aspiramos a transformar la manera en que las personas compran herramientas y materiales, combinando la conveniencia del ecommerce con un servicio al cliente excepcional, y expandiendo nuestro catálogo para cubrir todas las necesidades de nuestros clientes.</p>
+    
+                <h2>Nuestros Valores</h2>
+                <p>Nos regimos por la integridad, la excelencia y la responsabilidad. Estos valores nos permiten construir relaciones duraderas con nuestros clientes y proveedores, garantizando siempre la mejor experiencia de compra.</p>
+    
+                <h2>El Equipo</h2>
+                <p>Contamos con un equipo de expertos en herramientas y construcción, comprometidos con ofrecerte el mejor asesoramiento y servicio. Nuestro objetivo es ayudarte a encontrar la solución perfecta para tus proyectos.</p>
+    
+                <a href="/productos" class="btn-primary">Ver Productos</a>
+            </div>
         </div>
-    </div>
+    </main>
+    
+
+    
     <%- include('partials/footer') %>
 </body>
 </html>

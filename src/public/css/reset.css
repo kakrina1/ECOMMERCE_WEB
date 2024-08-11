@@ -11,12 +11,13 @@
 */
 /* Aquí definimos las Custom properties */
 :root {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
   --principal: #EF233C;
   --negro: #151314;
   --blanco: #ffffff;
   --secundario: #1098F7;
   /* Tipografía */
-  --tipo-principal: 'Inter', sans-serif;
+  --tipo-principal: "Inter", sans-serif;
 }
 
 /* Reseteamos los margin y paddings de todas las etiquetas */
@@ -68,6 +69,7 @@ html {
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
 h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
   font-size: 1em;
+  font-family: var(--tipo-principal);
   font-weight: inherit;
   font-style: inherit;
   text-decoration: none;

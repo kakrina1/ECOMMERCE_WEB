@@ -1,9 +1,3 @@
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-}
 
 .nosotros {
     background: url('https://s3-alpha-sig.figma.com/img/e5dc/ef1b/97bdf409315e94212fb02d341a2d7180?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Kzo2uSc2JU1bJpKyin19w7q4paKeHegH7FZVH25ydY~wZALN-jMlq25R64E2UT-AokpTzPr109nzLdYhuvM-ZCTOoHKigxe0sQ74GYNBKyL9bxfNiO3jLu1ZxeAqVvzVRvhaiaIg57MXvJWzsHhAxXY1go9DE6B1Jo6HYPrdoZ2-ZBZxdGsZJRMRAebRopAYCo3q92elBJ5ieLL9yHdaMyR27qINDUap12FMcn9lyjatxBlhqpr-9BI~qJ4gRM85gG0OQVWC9DyzGPp7taYH9S90SU7aw47XU8eC~WALAgpRiI8BiW7yq8fev45q816JAw3AOcu6x0d-vdzfyq8vKQ__') no-repeat center center/cover;
@@ -22,35 +16,35 @@ body {
     padding: 10px;
 }
 
-.productos {
+.productos-n {
     display: flex;
     padding: 20px 140px;
 }
 
-.productos img {
+.productos-n img {
     width: 50%;
     height: auto;
 }
 
-.productos-texto {
+.productos-n-texto {
     margin-left: 20px;
     line-height: 1.5;
 }
 
-.productos h2 {
+.productos-n h2 {
     font-size: 16px;
     font-weight: 500;
     color: #EF233C;
 }
 
-.productos h3 {
+.productos-n h3 {
     font-size: 38px;
     font-weight: 700;
     color: #151314;
     margin: 10px 0;
 }
 
-.productos p {
+.productos-n p {
     font-size: 16px;
     font-weight: 400;
     hyphens: none;
@@ -58,7 +52,7 @@ body {
     padding-bottom: 10px;
 }
 
-.productos button {
+.productos-n button {
     background-color: #EF233C;
     color: #fff;
     border: none;

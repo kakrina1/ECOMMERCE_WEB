@@ -8,7 +8,8 @@
     font-size: 18px;
     padding: 15px 0;
     font-weight: 500;
-    text-align: center
+    text-align: center;
+    margin-bottom:15px;
 }
 .boton{
     background-color: var(--principal);
@@ -139,3 +140,65 @@
     height: auto;
 }
 
+/* PRODUCTOS */
+.productos{
+    background-color: #F9F9F9;
+    padding: 50px;
+}
+.cuadricula{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 25px;
+}
+.cuadro{
+    text-align: left;
+    border-radius: 20px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow:  23px 23px 46px #eaeaea,
+             -23px -23px 46px #ffffff;
+}
+.cuadro img{
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.cuadro h4 {
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+}
+.cuadro h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.cuadro h5{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.cuadro p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--principal);
+}
+.separador {
+    height: 2px;
+    width: 100%;
+    color: #E3E3E3;
+    border: solid;
+    border-color: #E3E3E3;
+    border-width:1px 0 0 0;
+}
+.cantidad {
+    display: flex;
+    width: 100%;
+    padding: 15px 5px;
+    justify-content: space-between;
+}
+.cantidad input {
+    width: 50px;
+    margin-right: 25px;
+}

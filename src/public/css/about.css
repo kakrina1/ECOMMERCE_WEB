@@ -1,0 +1,102 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.nosotros {
+    background: url('https://s3-alpha-sig.figma.com/img/e5dc/ef1b/97bdf409315e94212fb02d341a2d7180?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Kzo2uSc2JU1bJpKyin19w7q4paKeHegH7FZVH25ydY~wZALN-jMlq25R64E2UT-AokpTzPr109nzLdYhuvM-ZCTOoHKigxe0sQ74GYNBKyL9bxfNiO3jLu1ZxeAqVvzVRvhaiaIg57MXvJWzsHhAxXY1go9DE6B1Jo6HYPrdoZ2-ZBZxdGsZJRMRAebRopAYCo3q92elBJ5ieLL9yHdaMyR27qINDUap12FMcn9lyjatxBlhqpr-9BI~qJ4gRM85gG0OQVWC9DyzGPp7taYH9S90SU7aw47XU8eC~WALAgpRiI8BiW7yq8fev45q816JAw3AOcu6x0d-vdzfyq8vKQ__') no-repeat center center/cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 140px;
+}
+
+.nosotros h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #151314;
+    margin: 0;
+    padding: 10px;
+}
+
+.productos {
+    display: flex;
+    padding: 20px 140px;
+}
+
+.productos img {
+    width: 50%;
+    height: auto;
+}
+
+.productos-texto {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.productos h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #EF233C;
+}
+
+.productos h3 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #151314;
+    margin: 10px 0;
+}
+
+.productos p {
+    font-size: 16px;
+    font-weight: 400;
+    hyphens: none;
+    color: #151314;
+    padding-bottom: 10px;
+}
+
+.productos button {
+    background-color: #EF233C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 140px;
+    background-color: #F9F9F9;
+    ;
+}
+
+.mision, .vision {
+    display: flex;
+    align-items: center;
+}
+
+.mision img, .vision img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.mision h3, .vision h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #151314;
+}
+
+.mision p, .vision p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    max-width: 380px;
+}

@@ -16,6 +16,11 @@
   --negro: #151314;
   --blanco: #ffffff;
   --secundario: #1098F7;
+  --complementario: #decccc;
+  --oscuro: #212121;
+ 
+
+  --grisclaro: #0f4e8d;
   /* Tipografía */
   --tipo-principal: "Inter", sans-serif;
 }

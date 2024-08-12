@@ -1,27 +1,12 @@
-/* GLOBALES */
-:root {
-  --blanco: #ffffff;
-  --oscuro: #212121;
-  --primario: #decccc;
-  --secundario: #ef233c;
-  --celeste: #1098f7;
-  --grisclaro: #0f4e8d;
-}
-
-html {
-  font-size: 62.5%;
-  box-sizing: border-box; /*aplicara para los todos los tamaños * */
-  scroll-snap-type: y mandatory; /*para hacer scroll*/
-}
 
 /*CONTACTO*/
 .formulario {
-  background-color: var(--celeste);
+  background-color: var(--secundario);
   width: min(
     60rem,
     50%
   ); /*utiliza el valor mas pequeño respecto a todo el ancho*/
-  margin: 0 auto; /*se usa cuando es formulario y no tiene display flex*/
+  margin: 50px auto; /*se usa cuando es formulario y no tiene display flex*/
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -36,7 +21,7 @@ html {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
-  color: var(--primario);
+  color: var(--complementario);
 }
 
 @media (min-width: 768px) {
@@ -66,22 +51,10 @@ html {
   border: none;
   padding: 1.5rem;
   border-radius: 0.5rem;
+  background-color: var(--blanco);
 }
 
-.boton {
-  background-color: var(--secundario); /*fondo*/
-  color: var(--blanco); /*color del texto*/
-  padding: 1rem 3rem;
-  margin-top: 3rem;
-  font-size: 2rem; /*tamaño del texto*/
-  text-decoration: none; /*elimina el subrayado*/
-  text-transform: uppercase; /*cambia a letra mayuscula*/
-  font-weight: bold; /*mas negrito el texto*/
-  border-radius: 1rem; /*border redondeado*/
-  width: 90%; /*ancho del boton*/
-  text-align: center;
-  border: none;
-}
+
 /*el media aplica para el boton*/
 @media (min-width: 768px) {
   .boton {

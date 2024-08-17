@@ -1,93 +1,200 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-}
-
-.product-container {
-    display: flex;
-    background-color: #F9F9F9;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.product-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.product-details {
-    margin-left: 20px;
-}
-
-.product-details h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.product-details .price {
-    font-size: 22px;
-    color: #e74c3c;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.product-details .description {
-    font-size: 16px;
+  }
+  body {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  header {
     margin-bottom: 20px;
-    text-align: justify;
-    hyphens: none;
-}
-
-.product-details .buy-btn {
-    background-color: #EF233C;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+  }
+  
+  .img-card img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 4px;
+    height: 520px;
+    object-fit: cover;
+  }
+  
+  .small-Card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15px;
+    gap: 12px;
+  }
+  
+  .small-Card img {
+    width: 104px;
+    height: 104px;
+    border-radius: 4px;
     cursor: pointer;
-    display: block;
-    margin: 0 auto
-}
-
-.product-details .buy-btn:hover {
-    background-color: #de485a;
-}
-
-.product-specs {
-    background-color: #F9F9F9;
-    margin: 20px;
-    color: #151314;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product-specs h2 {
-    margin-bottom: 15px;
-}
-
-.product-specs ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2a2a2a;
-    color: #fff;
+  }
+  
+  .small-Card img:active {
+    border: 1px solid #17696a;
+  }
+  
+  .sm-card {
+    border: 2px solid darkred;
+  }
+  
+  .product-info {
+    width: 60%;
+  }
+  
+  .product-info h3 {
+    font-size: 32px;
+    font-family: Lato;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  
+  .product-info h5 {
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: 130%;
+    color: #ff4242;
+    margin: 6px 0;
+  }
+  
+  .product-info del {
+    color: #a9a9a9;
+  }
+  
+  .product-info p {
+    color: #424551;
+    margin: 15px 0;
+    width: 70%;
+    hyphens: none;
+    text-align: justify;
+  }
+  
+  .sizes p {
     margin-top: 20px;
-}
+    font-size: 22px;
+    color: black;
+  }
+  
+  .size-option {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(235, 235, 235);
+  }
+  
+  .quantity input {
+    width: 51px;
+    height: 33px;
+    margin-bottom: 15px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: rgb(235, 235, 235);
+  }
+  
+  button {
+    background: #EF233C;
+    border-radius: 4px;
+    padding: 10px 37px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #e0919b;
+    transition: ease-in 0.4s;
+  }
+  
+  .delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    color: #787a80;
+    font-size: 12px;
+    font-family: Lato;
+    line-height: 150%;
+    letter-spacing: 1px;
+  }
+  
+  hr {
+    color: #787a80;
+    width: 58%;
+    opacity: 0.67;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .product-info {
+      width: 80%;
+    }
+    .product-info p {
+      width: 100%;
+    }
+    .delivery {
+      width: 100%;
+    }
+    hr {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .small-Card img {
+      width: 80px;
+    }
+    .product-info {
+      width: 100%;
+    }
+    .product-info p {
+      width: 100%;
+      hyphens: none;
+    }
+    .product-info h3 {
+      font-size: 24px;
+    }
+    .product-info h5 {
+      font-size: 20px;
+    }
+    .sizes p {
+      font-size: 18px;
+    }
+    .size-option,
+    .quantity input {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+    .delivery {
+      width: 100%;
+    }
+    hr {
+      width: 100%;
+    }
+  }
+  

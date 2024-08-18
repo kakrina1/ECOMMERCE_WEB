@@ -16,33 +16,32 @@
     </header>
 
     <div class="contenedor">
-        <div class="card1">
+        <form class="ss" action="" method="post"></form>
+        <div class="card">
             <img src="img/maestrito.jpg" alt="">
         </div>
+        <div class="card">
+            <h2 class="titulo">Iniciar Sesion</h2>
+            <input type="text" class="form-control" name="txtuser" id="txtuser"
+                placeholder="Usuario o Correo electronico">
+        </div>
+        <div class="card">
+            <input type="password" class="form-control" name="txtpass" id="txtpass" placeholder="Contraseña" required>
+        </div>
 
-        <form action="" method="post">
-            <div class="card2">
-                <h2 class="text">Iniciar Sesion</h2>
-                <input type="text" class="form-control" name="txtuser" id="txtuser"
-                    placeholder="Usuario o Correo electronico">
-            </div>
-            <div class="card3">
-                <input type="password" class="form-control" name="txtpass" id="txtpass" placeholder="Contraseña"
-                    required>
-            </div>
 
-            <div class="card4">
-                <button type="button" class="boton">Ingresar</button>
-            </div>
 
         </form>
+        <div class="card">
+            <button type="button" class="boton">Ingresar</button>
+        </div>
         <div class="checkbox">
             <label>
                 <input type="checkbox"> Recordarme
                 <span class="checkmark"></span>
 
             </label>
-            <label for="">Haz perdido tu contraseña</label>
+            <label class="labelsecondary">Haz perdido tu contraseña</label>
         </div>
     </div>
 </body>

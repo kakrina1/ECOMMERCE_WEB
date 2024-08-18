@@ -1,11 +1,10 @@
-
 .contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   line-height: 50px;
-  background-color: var( --secundario);
+  background-color: var(--secundario);
   width: min(80rem, 50%);
   margin: 0 auto; /*se usa cuando es formulario y no tiene display flex*/
   padding: 1rem;

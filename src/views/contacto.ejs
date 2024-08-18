@@ -6,9 +6,9 @@
     <meta name="keywords" content="Ferretería, Ecommerce, productos ferreteros, Herramientas, Construcción">
     <%- include('partials/head') %>
 
-    <title>
-        <%= title%>
-    </title>
+        <title>
+            <%= title%>
+        </title>
 </head>
 
 
@@ -21,45 +21,48 @@
 
     <section>
 
-        <form class="formulario ">
+        <form class="formulario">
             <!-- para dar border al formulario -->
-            <fieldset>
 
+
+
+            <div class="contenedor">
                 <legend>Comunicate con Nosotros</legend>
                 <div>
-                    <ul>
-                        <a>Horario de Atención</a>
-                        <label>Lun-Vie 08:00 AM - 18:00 PM </label>
-                        <h4>Teléfonos</h4>
-                        <label>987654321</label>
-                        <h4>Dirección</h4>
-                        <div class="ubicacion">
-                            <p> Lima</p>
-                        </div>
-                    </ul>
-
+                    <h4>Horario de Atención</h4>
+                    <label>Lun-Vie 08:00 AM - 05:00 PM</label>
+                    <label>Sab: 08:00 - 1:00 PM </label>
+                    <h4>Teléfonos</h4>
+                    <label>987654321</label>
+                    <h4>Dirección</h4>
+                    <div>
+                        <p> Lima - Peru</p>
+                    </div>
                 </div>
-                <legend>Escríbenos</legend>
 
-                <div class="contenedor-campos">
-                    <div class="campo">
-                        <input class="input-text" type="text" placeholder="Nombre y Apellidos">
-                    </div>
-                    <div class="campo">
-                        <input class="input-text" type="number" placeholder="Teléfono">
-                    </div>
-                    <div class="campo">
-                        <input class="input-text" type="email" placeholder="Correo">
-                    </div>
-                    <div class="campo">
-                        <textarea class="input-text"
-                            placeholder="Escríbenos para poder atenderlo mas pronto."></textarea>
-                    </div>
+            </div>
+
+
+            <div class="contenedor1">
+                <legend>Escríbenos</legend>
+                <div class="campo">
+                    <input class="input-text" type="text" placeholder="Nombre y Apellidos">
+                </div>
+                <div class="campo">
+                    <input class="input-text" type="number" placeholder="Numero de Teléfono">
+                </div>
+                <div class="campo">
+                    <input class="input-text" type="email" placeholder="Correo">
+                </div>
+                <div class="campo">
+                    <textarea class="input-text" placeholder="Escríbenos para poder atenderlo mas pronto."></textarea>
                 </div>
                 <div class="alinear-derecha flex">
                     <input class="boton w-sm-100" type="submit" value="Enviar">
                 </div>
-            </fieldset>
+            </div>
+
+
         </form>
     </section>
 

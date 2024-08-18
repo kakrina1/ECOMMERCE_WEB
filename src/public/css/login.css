@@ -1,26 +1,26 @@
 .contenedor {
   display: flex;
-  justify-content: center;
+  flex-flow: row;
   align-items: center;
-  flex-flow: row wrap;
-  line-height: 50px;
-  background-color: var(--secundario);
-  width: min(80rem, 50%);
-  margin: 0 auto; /*se usa cuando es formulario y no tiene display flex*/
+  justify-content: center;
+  line-height: 45px;
+  width: 50%;
   padding: 1rem;
   border-radius: 1rem;
+  background-color: var(--grisclaro);
 }
+
 .boton {
   background-color: var(--secundario); /*fondo*/
   color: var(--blanco); /*color del texto*/
   padding: 1rem 3rem;
   margin-top: 1rem;
-  font-size: 1.5rem; /*tamaño del texto*/
+  font-size: 20rem; /*tamaño del texto*/
   text-decoration: none; /*elimina el subrayado*/
   text-transform: uppercase; /*cambia a letra mayuscula*/
   font-weight: bold; /*mas negrito el texto*/
   border-radius: 1rem; /*border redondeado*/
-  width: 90%; /*ancho del boton*/
+  width: 150%; /*ancho del boton*/
   text-align: center;
   border: none;
 }
@@ -38,19 +38,25 @@ img {
   border-radius: 1rem;
 }
 
-.card1 {
-  align-content: center;
+.checkbox {
+  color: var(--blanco);
 }
-.card2 {
-  align-content: center;
+.titulo {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--blanco);
+  padding-top: 1rem;
+  text-transform: uppercase; /*cambia a letra mayuscula*/
 }
-.card3 {
-  align-content: center;
-}
-.card4 {
-  align-content: center;
-}
+
 @media (min-width: 768px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
   .contenedor {
     display: flex;
     flex-direction: column;
